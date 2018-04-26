@@ -1,0 +1,44 @@
+body {
+    background-color: #808000;
+    font-family:open sans-serif;
+}
+table {
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+th {
+    font-size: 100%;
+    text-align: center;
+    background-color: #f8f9ff;
+    padding: 10px;
+}
+td {
+    text-align: left;
+    background-color: azure;
+    padding: 4px;
+}
+
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: rgba(142, 27, 134, 0.96);
+}
+input{
+    width: 150px;
+}
+.la2{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.sub1{
+    margin-left: 65px;
+    margin-top: 10px;
+}
+img .img{
+    width: 450px;
+}

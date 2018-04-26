@@ -1,0 +1,6 @@
+INSERT INTO GUEST (COMMENT, USER) VALUES ('camry', 'toyota');
+INSERT INTO GUEST (COMMENT, USER) VALUES ('navara', 'nissan');
+INSERT INTO GUEST (COMMENT, USER) VALUES ('corolla', 'toyota');
+INSERT INTO GUEST (COMMENT, USER) VALUES ('civic', 'honda');
+INSERT INTO GUEST (COMMENT, USER) VALUES ('acura', 'honda');
+INSERT INTO GUEST (COMMENT, USER) VALUES ('tercel', 'toyota');

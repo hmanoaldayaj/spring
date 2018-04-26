@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>MyCars</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/Css/myCss.css}" />
+</head>
+<body>
+
+<h3>Car Registery</h3>
+
+
+<div th:if="${entries.isEmpty()}">
+    <p>Sorry there are no data.</p>
+</div>
+
+<div th:if="${!entries.isEmpty()}">
+    <table>
+        <tr>
+            <th>Car</th>
+            <th>Modle</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </tr>
+        <tr th:each="entry: ${entries}">
+            <td th:text="${entry.user}"></td>
+            <td th:text="${entry.comment}"></td>
+            <td><a th:href="@{'/delete/' + ${entry.id}}">delete</a></td>
+            <td><a th:href="@{'/update/' + ${entry.id}}">update</a></td>
+        </tr>
+    </table>
+</div>
+
+<h2 th:text="${formHeader}"></h2>
+<form th:object="${newEntry}" method="post">
+    <label>Car </label>
+    <input class="la2" type="text" size="32" th:field="*{user}" />
+    <br/>
+    <label>Modle</label>
+    <input type="text" size="64" th:field="*{comment}" />
+    <br/>
+    <input class="sub1" type="submit" value="Submit" />
+</form>
+<img class="img" th:src="@{/Css/spring.png}" style="width: 450px; margin-left:450px; " />
+</body>
+</html>
